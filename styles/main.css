@@ -3,7 +3,7 @@ h1, h2, h3, h4, h5, h6, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
+b, u, i, center, p,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
@@ -54,10 +54,12 @@ table {
 /* General stylings for overall layout like html-tags, header, footer, container */
 body {
   overflow-x: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 h1, h2 {
-  font-size: 12.5vw;
+  font-size: 2.5rem;
   font-weight: bold;
   padding-bottom: 16px;
 }
@@ -74,15 +76,32 @@ h1, h2 {
   }
 }
 
+h2 {
+  font-size: 3.75rem;
+  font-weight: bold;
+}
+
+@media (min-width: 480px) {
+  h2 {
+    font-size: 4.375rem;
+  }
+}
+
+@media (min-width: 768px) {
+  h2 {
+    padding-bottom: 8px;
+  }
+}
+
 h3 {
-  font-size: 8vw;
+  font-size: 38px;
   font-weight: bold;
   padding-bottom: 16px;
 }
 
 @media (min-width: 480px) {
   h3 {
-    font-size: 2rem;
+    font-size: 2.375rem;
   }
 }
 
@@ -92,9 +111,16 @@ h3 {
   }
 }
 
+h4 {
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 16px;
+}
+
 p {
-  font-size: 6vw;
+  font-size: 18px;
   line-height: 1.5;
+  margin-bottom: 32px;
 }
 
 @media (min-width: 480px) {
@@ -103,12 +129,48 @@ p {
   }
 }
 
+p .small {
+  font-size: 4vw;
+  line-height: 1.5;
+  padding-bottom: 16px;
+}
+
+@media (min-width: 480px) {
+  p .small {
+    font-size: 1.125rem;
+  }
+}
+
 section {
   padding: 60px 0;
 }
 
 section .heading {
-  padding-bottom: 100px;
+  padding-bottom: 80px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn {
+  border: 3px solid #262626;
+  padding: 12px;
+  font-size: 32px;
+  text-align: center;
+  margin-top: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(to, #445555));
+  background: linear-gradient(#445555 to #212121);
+}
+
+.small {
+  font-size: 18px;
 }
 
 .content-wrapper {
@@ -142,5 +204,9 @@ section .heading {
 .home-content__image {
   border-radius: 50%;
   width: 80%;
+}
+
+.about-text {
+  padding-bottom: 30px;
 }
 /*# sourceMappingURL=main.css.map */
