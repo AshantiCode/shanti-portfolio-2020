@@ -258,6 +258,46 @@ a {
 
 
 //  ==========  About  ======================
-.about-text {
-	padding-bottom: 30px;
+.about {
+	&-content {
+		width: 760px;
+	}
+	&-title {
+		font-size: 32px;
+		margin-bottom: 20px;
+	}
+
+	&-text {
+		padding-bottom: 55px;
+		font-size: 22px;
+		line-height: 1.5;
+
+		&__padding {
+			padding-bottom: 30px;
+		}
+	}
+
+	&-img {
+		max-width: 200px;
+	}
+
+	.lets-talk {
+		display: flex;
+		flex-direction: column;
+		float: right;
+	}
+
+	.floating-img {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		flex: 1;
+	}
+
+	&-btn {
+		font-size: 44px;
+		font-weight: bold;
+		margin-top: 60px;
+		width: 370px;
+	}
 }
