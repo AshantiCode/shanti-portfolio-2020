@@ -360,4 +360,8 @@ button {
 .contact label {
   display: none;
 }
+
+#linkedin {
+  max-width: 300px;
+}
 /*# sourceMappingURL=main.css.map */
