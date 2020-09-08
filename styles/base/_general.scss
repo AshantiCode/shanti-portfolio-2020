@@ -53,15 +53,15 @@
 // 	padding-bottom: $space;
 // }
 
-p {
-	font-size: 18px;  
-	line-height: 1.5;
-	margin-bottom: 32px;
+// p {
+// 	font-size: 18px;  
+// 	line-height: 1.5;
+// 	margin-bottom: 32px;
 
-	@media (min-width: $xs) {
-		font-size: 28px
-	}
-}
+// 	@media (min-width: $xs) {
+// 		font-size: 28px
+// 	}
+// }
 
 
 section {
@@ -94,11 +94,11 @@ a {
 }
 
 .small {
-	font-size: 18px;
+	font-size: 20px;
 }
 
 .extra-small {
-	font-size: 16px
+	font-size: 18px
 }
 
 .content-wrapper {
@@ -166,9 +166,17 @@ a {
 	}
 
 	&-info {
+		font-size: 18px;  
+		line-height: 1.5;
+		margin-bottom: 32px;
+	
+		@media (min-width: $xs) {
+			font-size: 28px;
+		}
+
 		@media (min-width: $md) {
 			width: 80%;
-			padding-right: 60px;
+			// padding-right: 40px;
 		}
 	}
 

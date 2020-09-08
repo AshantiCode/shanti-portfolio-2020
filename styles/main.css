@@ -11,18 +11,6 @@
   overflow-x: hidden;
 }
 
-p {
-  font-size: 18px;
-  line-height: 1.5;
-  margin-bottom: 32px;
-}
-
-@media (min-width: 480px) {
-  p {
-    font-size: 28px;
-  }
-}
-
 section {
   min-height: 100vh;
   padding: 60px 0;
@@ -54,11 +42,11 @@ a {
 }
 
 .small {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .extra-small {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .content-wrapper {
@@ -142,10 +130,21 @@ a {
   }
 }
 
+.home-info {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 32px;
+}
+
+@media (min-width: 480px) {
+  .home-info {
+    font-size: 28px;
+  }
+}
+
 @media (min-width: 992px) {
   .home-info {
     width: 80%;
-    padding-right: 60px;
   }
 }
 
