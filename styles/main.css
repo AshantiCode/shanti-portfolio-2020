@@ -26,6 +26,19 @@ a {
   color: inherit;
 }
 
+input, textarea {
+  display: block;
+}
+
+button {
+  padding: 0;
+  border: none;
+  outline: none;
+  font: inherit;
+  color: inherit;
+  background: none;
+}
+
 .btn {
   border: 3px solid #262626;
   width: 300px;
@@ -188,7 +201,6 @@ a {
 .resume-grid {
   display: -ms-grid;
   display: grid;
-  grid-auto-columns: 1fr;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   -webkit-column-gap: 220px;
@@ -245,6 +257,7 @@ a {
 .about-content {
   width: 760px;
   overflow: hidden;
+  padding-right: 20px;
 }
 
 .about-title {
@@ -307,5 +320,44 @@ a {
 
 .about .love-dogs {
   display: inline;
+}
+
+.contact-info {
+  margin-bottom: 100px;
+}
+
+.contact-text {
+  font-size: 32px;
+  line-height: 1.5;
+}
+
+.contact-inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  -webkit-column-gap: 150px;
+          column-gap: 150px;
+}
+
+.contact-img {
+  width: 300px;
+}
+
+.contact-btn {
+  width: 100%;
+}
+
+.contact input, .contact textarea {
+  padding: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+  border: none;
+  background: #F5F6F8;
+  border-radius: 5px;
+}
+
+.contact label {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */

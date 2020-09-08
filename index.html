@@ -179,7 +179,9 @@
 
 				<h4 class="about-title about-title__margin">Okay, what else?</h4>
 				<p class=" about-text love-dogs">I ❤️ dogs.</p>
-				<img src="./img/hund.gif" alt="Hund mit sonnenbrille" class="about-gif">
+				<img src="./img/hund.gif"
+						 alt="Hund mit sonnenbrille"
+						 class="about-gif">
 				<p>Explore some Gifs to make you smile</p>
 			</div>
 			<article class="lets-talk">
@@ -198,11 +200,52 @@
 		<!-- Contact Section  ======================================== -->
 		<section class="contact">
 			<div class="contact-content">
-				<h3 class="contact-heading">Contact(every letter is in span-tag)</h3>
-				<p class="contact-text"></p>
-				<form action="submit">
-					<button type="submit">Send Email</button>
-				</form>
+				<h3 class="heading">Contact</h3>
+				<div class="contact-info">
+					<p class="contact-text">Want to work together?</p>
+					<p class="contact-text">Just want to say hi? Drop me a line right here</p>
+				</div>
+				<div class="contact-inner">
+					<div class="contact-img-__wrapper">
+						<img src="./img/shanti-square.png"
+								 alt="Shanti Haring"
+								 class="contact-img">
+					</div>
+					<div class="form-wrapper">
+						<form action="submit"
+									class="form">
+							<label for="name">Name</label>
+							<input type="text"
+										 aria-label="Your Name"
+										 name="name"
+										 tabindex="1"
+										 id="name"
+										 placeholder="Your Name"
+										 required>
+							<label for="email">Email</label>
+							<input type="text"
+										 aria-label="Your Email"
+										 name="email"
+										 max-length="40"
+										 tabindex="2"
+										 id="email"
+										 placeholder="Your Email"
+										 required>
+							<label for="msg">Message</label>
+							<textarea name="msg"
+												aria-label="Your Message"
+												id="msg"
+												cols="30"
+												maxlength="200"
+												rows="10"
+												tabindex="3"
+												placeholder="Your Message"
+												required></textarea>
+							<button class="btn contact-btn"
+											type="submit">Send Email</button>
+						</form>
+					</div>
+				</div>
 			</div>
 		</section>
 
