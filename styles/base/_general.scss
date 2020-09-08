@@ -259,12 +259,18 @@ a {
 
 //  ==========  About  ======================
 .about {
+	display: flex;
+	align-items: flex-end;	
 	&-content {
 		width: 760px;
 	}
 	&-title {
 		font-size: 32px;
 		margin-bottom: 20px;
+
+		&__margin {
+			margin-bottom: 0px;
+		}
 	}
 
 	&-text {
@@ -284,14 +290,20 @@ a {
 	.lets-talk {
 		display: flex;
 		flex-direction: column;
-		float: right;
+			
 	}
 
 	.floating-img {
-		position: relative;
+		// position: relative;
 		display: flex;
 		justify-content: center;
-		flex: 1;
+		// flex: 1;
+	}
+
+	&-gif {
+		width: 60px;
+		transform: translate(5px, 15px);
+		
 	}
 
 	&-btn {
@@ -299,5 +311,10 @@ a {
 		font-weight: bold;
 		margin-top: 60px;
 		width: 370px;
+	}
+
+	.love-dogs {
+		display: inline;
+		
 	}
 }

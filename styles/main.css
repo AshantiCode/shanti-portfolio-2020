@@ -233,6 +233,15 @@ a {
   margin-bottom: 0px;
 }
 
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
 .about-content {
   width: 760px;
 }
@@ -240,6 +249,10 @@ a {
 .about-title {
   font-size: 32px;
   margin-bottom: 20px;
+}
+
+.about-title__margin {
+  margin-bottom: 0px;
 }
 
 .about-text {
@@ -264,20 +277,21 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  float: right;
 }
 
 .about .floating-img {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+}
+
+.about-gif {
+  width: 60px;
+  -webkit-transform: translate(5px, 15px);
+          transform: translate(5px, 15px);
 }
 
 .about-btn {
@@ -285,5 +299,9 @@ a {
   font-weight: bold;
   margin-top: 60px;
   width: 370px;
+}
+
+.about .love-dogs {
+  display: inline;
 }
 /*# sourceMappingURL=main.css.map */
