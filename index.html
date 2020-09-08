@@ -5,33 +5,39 @@
 	<meta name="viewport"
 				content="width=device-width, initial-scale=1.0">
 	<title>S.Haring</title>
-	<link rel="icon" type="image/png"  href="./favicon.png">
-	<link rel="stylesheet" href="./styles/main.css">
+	<link rel="icon"
+				type="image/png"
+				href="./favicon.png">
+	<link rel="stylesheet"
+				href="./styles/main.css">
 
 </head>
 
 <body>
 	<header>
-		<nav>
-			<ul>
-				<li>Work</li>
-				<li>Resume</li>
-				<li>About</li>
-				<li>Contact</li>
+		<nav class="nav-bar">
+			<ul class="nav">
+				<li><a href="#home"></a>Home</li>
+				<li><a href="#resume"></a>Resume</li>
+				<li><a href="#about"></a>About</li>
+				<li><a href="#contact"></a>Contact</li>
 			</ul>
 		</nav>
 	</header>
 	<main class='content-wrapper'>
 		<section class="home">
 			<div class="home-content">
-				<div class="home-content__text">
+				<div class="home-info">
 					<h1 class="home-heading">Hi, I'm Shanti</h1>
-					<h2 class="home-subheading">a front-end developer and digital tools enthusiast in Berlin.</h2>
+					<h2 class="home-subheading">a Front-end Developer and Digital Tools Enthusiast in Berlin.</h2>
 					<p>I specialize in creating websites that please your eye and make fun to use.</p>
-					<p>I truly believe the future of work lays in simplicity. I stick to html/css and javascript and use libraries and digital tools to create my customers visions.</p>
+					<p>I truly believe the future of work lays in simplicity. I stick to html/css and javascript and use libraries
+						and digital tools to create my customers visions.</p>
 				</div>
-				<div>
-					<img src="./img/shanti-square.png" alt="Shanti Haring" class="img-responsive home-content__image center-block">
+				<div class="img-wrapper">
+					<img src="./img/shanti-square.png"
+							 alt="Shanti Haring"
+							 class="img-responsive home-image center-block">
 				</div>
 
 			</div>
@@ -40,34 +46,95 @@
 		<section class="work">
 			<div class="work-content">
 				<h2 class="heading"><span class="hidden">Selected </span>Work</h2>
-				<div class="work-grid">
-					<div class="work-item">Project one</div>
-					<div class="work-item">Project two</div>
-					<div class="work-item">Project three</div>
+				<div class="work-group">
+					<div class="work-item">
+						<img src="https://place-hold.it/300x500/C1666B&text=Project&fontsize=20"
+								 alt="">
+					</div>
+					<div class="work-item">
+						<img src="https://place-hold.it/300x500/C1666B&text=Project&fontsize=20"
+								 alt="">
+					</div>
+					<div class="work-item">
+						<img src="https://place-hold.it/300x500/C1666B&text=Project&fontsize=20"
+								 alt="">
+					</div>
 				</div>
 			</div>
 		</section>
 
+
+   <!-- Resume Section ======================================= -->
 		<section class="resume">
 			<div class="resume-content">
 				<h2 class="heading">Resume</h2>
-				<h3>Work Experience</h3>
-				<div class="work-edu">
-					<p>Bleech WP Agency</p>
-					<p class="small">Lorem ipsum dolor sit amet.</p>
+				<div class="resume-grid">
+					<div>
+						<h3 class="grid-item-title">Work Experience</h3>
+						<div >
+							<p class="item-title">Bleech WP Agency</p>
+							<p class="small">Lorem ipsum dolor sit amet.</p>
+						</div>
+						<div >
+							<p class="item-title"> ISM Glas \ Website Relaunch</p>
+							<p class="small">Lorem ipsum dolor sit amet.</p>
+						</div>
+					</div>
+
+					<div>
+						<h3 class="grid-item-title">Education</h3>
+						<p class="item-title">Spiced Academy</p>
+						<p class="small">Javascript </p>
+					</div>
+
+					<div>
+						<h3 class="grid-item-title">Skills</h3>
+						<div class="skills">
+							<div class="development">
+								<h4>Development</h4>
+								<ul>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+							<div class="tools">
+								<h4>Tools</h4>
+								<ul>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div>
+						<h3 class="grid-item-title">Online Courses</h3>
+						<div class="course">
+							<h4 class="course-title">Udemy</h4>
+							<p>Description</p>
+							<p>date</p>
+						</div>
+						<div class="course">
+							<h4 class="course-title">Udemy</h4>
+							<p>Description</p>
+							<p>date</p>
+						</div>
+						<div class="course">
+							<h4 class="course-title">Udemy</h4>
+							<p>Description</p>
+							<p>date</p>
+						</div>
+					</div>
 				</div>
-				<div class="work-edu">
-					<p>ISM Glas \ Website Relaunch</p>
-					<p class="small">Lorem ipsum dolor sit amet.</p>
-				</div>
-				<h3>Education</h3>
-				<p>Spiced Academy</p>
-				<p class="small">Javascript </p>
-				<div class="skills"></div>
-				<div class="tools"></div>
-				<div class="online-courses"></div>
+
+
+
 				<div class="btn"><a href="#"
-				class="download-cv">Download Resume</a></div>
+						 class="download-cv">Download Resume</a></div>
 			</div>
 		</section>
 
@@ -75,24 +142,30 @@
 			<div class="about-content">
 				<h2 class="heading">About Me</h2>
 				<h4>Who am I?</h4>
-				<p class="about-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro tempora eligendi eaque. Ratione, neque. Magni
+				<p class="about-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro tempora eligendi eaque.
+					Ratione, neque. Magni
 					eos inventore culpa cupiditate mollitia.</p>
-			
+
 				<h4>What do I do?</h4>
-				<p class="about-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro tempora eligendi eaque. Ratione, neque. Magni
+				<p class="about-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro tempora eligendi eaque.
+					Ratione, neque. Magni
 					eos inventore culpa cupiditate mollitia.</p>
-				
+
 				<h4>What am I passionate about?</h4>
 				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro tempora eligendi eaque. Ratione, neque. Magni
 					eos inventore culpa cupiditate mollitia.</p>
-					<br>
-				<p class="about-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem error, rerum eos facere dolore necessitatibus voluptates, ad ducimus recusandae soluta ipsam optio, illo laborum mollitia aspernatur suscipit exercitationem. Libero soluta expedita consectetur ex voluptates sunt ad dignissimos ut similique unde?</p>
-				
+				<br>
+				<p class="about-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem error, rerum eos
+					facere dolore necessitatibus voluptates, ad ducimus recusandae soluta ipsam optio, illo laborum mollitia
+					aspernatur suscipit exercitationem. Libero soluta expedita consectetur ex voluptates sunt ad dignissimos ut
+					similique unde?</p>
+
 				<h4>Okay, what else?</h4>
 				<p>I [heart] dogs. Thats it. [dog image]</p>
 
 				<article class="lets-talk">
-					<img src="" alt="">
+					<img src=""
+							 alt="">
 					<div class="btn">
 						<a href="#contact">Let's talk</a>
 					</div>
