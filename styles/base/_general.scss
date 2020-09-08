@@ -261,8 +261,10 @@ a {
 .about {
 	display: flex;
 	align-items: flex-end;	
+	
 	&-content {
 		width: 760px;
+		overflow: hidden;
 	}
 	&-title {
 		font-size: 32px;
@@ -290,6 +292,7 @@ a {
 	.lets-talk {
 		display: flex;
 		flex-direction: column;
+		flex: 1 0 auto;
 			
 	}
 
