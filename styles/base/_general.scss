@@ -339,6 +339,7 @@ button {
 // ===  Contact =============================
 
 .contact {
+	margin-bottom: 0px;
 	&-info	 {
 		margin-bottom: 100px;
 	}
@@ -377,6 +378,12 @@ button {
 }
 
 // Footer Section  ===============================
-#linkedin {
-	max-width: 300px
+.social-wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.footer-info {
+	text-align: center;
+	padding: 15px 0px 25px;
 }

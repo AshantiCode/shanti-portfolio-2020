@@ -322,6 +322,10 @@ button {
   display: inline;
 }
 
+.contact {
+  margin-bottom: 0px;
+}
+
 .contact-info {
   margin-bottom: 100px;
 }
@@ -361,7 +365,17 @@ button {
   display: none;
 }
 
-#linkedin {
-  max-width: 300px;
+.social-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-info {
+  text-align: center;
+  padding: 15px 0px 25px;
 }
 /*# sourceMappingURL=main.css.map */
