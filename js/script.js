@@ -4,6 +4,7 @@ const linkedin = document.getElementById("linkedin");
 const github = document.getElementById("github");
 const mail = document.getElementById("mail");
 const flower = document.getElementById("flower");
+const hello = document.getElementById("hello");
 
 let animation1 = bodymovin.loadAnimation({
 	container: linkedin,
@@ -41,6 +42,17 @@ let animation4 = bodymovin.loadAnimation({
 	loop: true,
 	speed: 0.5,
 });
+
+let animation5 = bodymovin.loadAnimation({
+	container: hello,
+	renderer: "svg",
+	path: "js/hello.json",
+	autoplay: true,
+	loop: false,
+
+});
+
+animation5.setSpeed(0.5)
 
 
 
