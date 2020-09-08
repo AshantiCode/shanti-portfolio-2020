@@ -5,6 +5,7 @@ const github = document.getElementById("github");
 const mail = document.getElementById("mail");
 const flower = document.getElementById("flower");
 const hello = document.getElementById("hello");
+const scroll = document.getElementById("arrow-scroll");
 
 let animation1 = bodymovin.loadAnimation({
 	container: linkedin,
@@ -51,8 +52,15 @@ let animation5 = bodymovin.loadAnimation({
 	loop: false,
 
 });
-
 animation5.setSpeed(0.5)
+
+let animation6 = bodymovin.loadAnimation({
+	container: scroll,
+	renderer: "svg",
+	path: "js/downward-circle.json",
+	autoplay: true,
+	loop: true,
+});
 
 
 

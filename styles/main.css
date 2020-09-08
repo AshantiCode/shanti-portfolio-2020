@@ -12,7 +12,7 @@
 }
 
 section {
-  height: 100vh;
+  min-height: 100vh;
   margin-bottom: 220px;
 }
 
@@ -97,6 +97,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 80vh;
 }
 
 .home #hello {
@@ -212,6 +213,14 @@ button {
           flex-direction: column;
   -ms-flex-item-align: center;
       align-self: center;
+}
+
+#arrow-scroll {
+  width: 100px;
+  height: 100px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin: 0 auto;
 }
 
 .work-group {

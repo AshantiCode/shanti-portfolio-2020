@@ -65,7 +65,7 @@
 
 
 section {
-	height: 100vh;
+	min-height: 100vh;
 	// padding: 80px 0 ;
 	margin-bottom: 220px;
 	.heading {
@@ -149,6 +149,8 @@ button {
 .home {
 	display: flex;
 	align-items: center;
+	height: 80vh;
+	
 
 	#hello {
 		width: 300px;
@@ -161,8 +163,6 @@ button {
 		font-weight: bold;
 		padding-bottom: $space;
 	
-	
-
 		@media (min-width: $lg) {
 			align-self: flex-end;
 			transform: translate(-50px, -14px);
@@ -236,6 +236,13 @@ button {
 		align-self: center;
 	}
 }
+#arrow-scroll {
+	width: 100px;
+	height: 100px;
+	transform: rotate(180deg);
+	margin: 0 auto;
+}
+
 
 //  ==========  Work  ======================
 .work {
