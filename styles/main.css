@@ -11,12 +11,12 @@
   overflow-x: hidden;
 }
 
-section {
-  min-height: 100vh;
+.section {
+  height: 100vh;
   margin-bottom: 220px;
 }
 
-section .heading {
+.section .heading {
   padding-bottom: 80px;
   font-size: 72px;
 }
@@ -116,7 +116,11 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 80vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 90vh;
+  margin-bottom: 0;
 }
 
 .home #hello {
@@ -239,7 +243,7 @@ button {
   height: 100px;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  margin: 0 auto;
+  margin: 0 auto 220px;
 }
 
 #arrow-scroll:hover {
@@ -257,6 +261,10 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.resume {
+  height: auto;
 }
 
 .resume-grid {
@@ -313,6 +321,7 @@ button {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  height: auto;
 }
 
 .about-content {
@@ -384,6 +393,7 @@ button {
 }
 
 .contact {
+  height: auto;
   margin-bottom: 0px;
 }
 
@@ -424,6 +434,11 @@ button {
 
 .contact label {
   display: none;
+}
+
+#flower {
+  -webkit-transform: translateY(12px);
+          transform: translateY(12px);
 }
 
 .social-wrapper {

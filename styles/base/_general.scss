@@ -64,8 +64,8 @@
 // }
 
 
-section {
-	min-height: 100vh;
+.section {
+	height: 100vh;
 	// padding: 80px 0 ;
 	margin-bottom: 220px;
 	.heading {
@@ -168,7 +168,9 @@ button {
 .home {
 	display: flex;
 	align-items: center;
-	height: 80vh;
+	justify-content: center;
+	height: 90vh;
+	margin-bottom: 0;
 	
 
 	#hello {
@@ -259,7 +261,7 @@ button {
 	width: 100px;
 	height: 100px;
 	transform: rotate(180deg);
-	margin: 0 auto;
+	margin: 0 auto 220px;
 
 	&:hover {
 		cursor: pointer;
@@ -273,6 +275,7 @@ button {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+		
 	}
 }
 
@@ -280,6 +283,8 @@ button {
 //  ==========  Resume  ======================
 
 .resume {
+	height: auto;
+
 	&-grid {
 		display: grid;
 		// grid-auto-columns: 1fr;
@@ -328,7 +333,8 @@ button {
 //  ==========  About  ======================
 .about {
 	display: flex;
-	align-items: flex-end;	
+	align-items: flex-end;
+	height: auto;	
 	
 	&-content {
 		width: 760px;
@@ -394,6 +400,7 @@ button {
 // ===  Contact =============================
 
 .contact {
+	height: auto;
 	margin-bottom: 0px;
 	&-info	 {
 		margin-bottom: 100px;
@@ -433,6 +440,11 @@ button {
 }
 
 // Footer Section  ===============================
+
+#flower {
+	transform: translateY(12px);
+}
+
 .social-wrapper {
 	display: flex;
 	justify-content: center;
