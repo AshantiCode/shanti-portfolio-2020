@@ -60,7 +60,8 @@ button {
 }
 
 .extra-small {
-  font-size: 18px;
+  font-size: 15px;
+  font-weight: 300;
 }
 
 .content-wrapper {
@@ -286,11 +287,26 @@ button {
   margin-bottom: 40px;
 }
 
+.resume .offsite-link-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.resume .offsite-icon {
+  padding: 3px 0px 0px 9px;
+  cursor: pointer;
+}
+
 .resume .item-title {
   font-size: 24px;
-  line-height: 1.5;
+  line-height: 1.3;
   margin-bottom: 0px;
   font-weight: bold;
+}
+
+.resume .job-title {
+  padding: 5px 0px;
 }
 
 .resume .list-items {
