@@ -14,6 +14,8 @@ window.onload = function () {
 	const flower = document.getElementById("flower");
 	const hello = document.getElementById("hello");
 	const scroll = document.getElementById("arrow-scroll");
+	const loader = document.getElementById("loader");
+
 
 	let animation1 = bodymovin.loadAnimation({
 		container: linkedin,
@@ -70,6 +72,15 @@ window.onload = function () {
 		loop: true,
 	});
 
+	let animation7 = bodymovin.loadAnimation({
+		container: loader,
+		renderer: "svg",
+		path: "js/hello.json",
+		autoplay: true,
+		loop: false,
+	});
+	animation7.setSpeed(0.5)
+
 
 
 	linkedin.addEventListener("mouseenter", function () {
@@ -96,5 +107,21 @@ window.onload = function () {
 		animation3.stop();
 	});
 
+
+
+	// =====   hello pre srceen  =====================
+	// Comment out for development
+	// var tl = gsap.timeline()
+
+	// tl.to("#loader", {
+	// 	duration: 3.2,
+	// })
+
+	// tl.to("#loader", {
+	// 	duration: 2,
+	// 	scale: 2,
+	// 	opacity: 0,
+	// 	zIndex: 0
+	// })
 
 }
