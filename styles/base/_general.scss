@@ -68,14 +68,12 @@
 	height: 100vh;
 	// padding: 80px 0 ;
 	margin-bottom: 220px;
+
 	.heading {
 		padding-bottom: 80px;
 		font-size: 72px;
-
 	}
 }
-
-
 
 a {
 	text-decoration: none;
@@ -119,7 +117,7 @@ button {
 }
 
 .content-wrapper {
-	width: 80%;
+	width: 100%;
 	max-width: 1140px;
 	margin: 0 auto;
 }
@@ -165,6 +163,7 @@ button {
 
 
 //  ==========  Home  ======================
+
 .home {
 	display: flex;
 	align-items: center;
@@ -186,7 +185,7 @@ button {
 	
 		@media (min-width: $lg) {
 			align-self: flex-end;
-			transform: translate(-50px, -14px);
+			// transform: translate(-50px, -14px);
 		}
 			
 		@media (min-width: $xs) {
@@ -197,14 +196,17 @@ button {
 		}
 		@media (min-width: $md) {
 			font-size: 80px;  //50px
+			line-height: normal;
+			
 		}
 		
 	}
-
+ // if i have the hello logo there
 	.heading-wrapper {
 		@media (min-width: $lg) {
 			display: flex;
 			flex-direction: row;
+			
 		}
 	
 	}
