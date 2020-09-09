@@ -4,7 +4,13 @@
 		el: document.querySelector(".smoothScrolling"),
 		smooth: true
 	});
+	// document.querySelector(".course-wrapper").addEventListener("mouseenter", function () {
+	// 	scroll.stop();
+	// })
+
 })();
+
+
 
 // Lottie Animations
 window.onload = function () {
