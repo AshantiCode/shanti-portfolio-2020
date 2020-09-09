@@ -338,8 +338,19 @@ button {
 		grid-template-columns: 1fr 1fr;
 	}
 
+	.course-wrapper {
+		display: flex;
+		flex-wrap: nowrap;
+		overflow-x: auto;
+	}
+
 	.course {
 		margin-bottom: 40px;
+		flex: 0 0 auto;
+
+		img {
+			width: 100%;
+		}
 
 		&-inner {
 			margin-bottom: 0px;

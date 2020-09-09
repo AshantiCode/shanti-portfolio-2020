@@ -321,8 +321,24 @@ button {
       grid-template-columns: 1fr 1fr;
 }
 
+.resume .course-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
 .resume .course {
   margin-bottom: 40px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.resume .course img {
+  width: 100%;
 }
 
 .resume .course-inner {
