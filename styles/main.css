@@ -270,11 +270,11 @@ button {
 .resume-grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  width: 200%;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
   -webkit-column-gap: 220px;
           column-gap: 220px;
-  row-gap: 100px;
 }
 
 .resume .grid-item-title {
@@ -344,6 +344,12 @@ button {
 
 .resume .course-inner {
   margin-bottom: 0px;
+}
+
+.resume .animation-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .about {

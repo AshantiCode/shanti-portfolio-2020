@@ -1,14 +1,13 @@
 // Smooth Scrolling
-(function () {
-	const scroll = new LocomotiveScroll({
-		el: document.querySelector(".smoothScrolling"),
-		smooth: true
-	});
-	// document.querySelector(".course-wrapper").addEventListener("mouseenter", function () {
-	// 	scroll.stop();
-	// })
+// gsap.registerPlugin(ScrollTrigger)
 
-})();
+// Smooth Scrolling not working with Scroll Trigger
+// (function () {
+// 	const scroll = new LocomotiveScroll({
+// 		el: document.querySelector(".smoothScrolling"),
+// 		smooth: true
+// 	});
+// })();
 
 
 
@@ -113,21 +112,35 @@ window.onload = function () {
 		animation3.stop();
 	});
 
-
-
-	// =====   hello pre srceen  =====================
-	// Comment out for development
-	// var tl = gsap.timeline()
-
-	// tl.to("#loader", {
-	// 	duration: 3.2,
-	// })
-
-	// tl.to("#loader", {
-	// 	duration: 2,
-	// 	scale: 2,
-	// 	opacity: 0,
-	// 	zIndex: 0
-	// })
-
 }
+
+// =====   hello pre srceen  =====================
+// ***** Comment out for development ***********
+
+// var tl = gsap.timeline()
+
+// tl.to("#loader", {
+// 	duration: 3.2,
+// })
+
+// tl.to("#loader", {
+// 	duration: 2,
+// 	scale: 2,
+// 	opacity: 0,
+// 	zIndex: 0
+// })
+
+var animWrap = document.querySelector('.animation-wrap')
+
+var horizontalTween = gsap.to(animWrap, {
+	x: 400
+})
+
+ScrollTrigger.create({
+	id: "horizontalScrolling",
+	trigger: ".pin-wrap",
+	scrub: true,
+	animation: horizontalTween
+})
+
+

@@ -208,9 +208,7 @@ button {
 		@media (min-width: $lg) {
 			display: flex;
 			flex-direction: row;
-			
 		}
-	
 	}
 	
 	&-subheading {
@@ -291,10 +289,11 @@ button {
 
 	&-grid {
 		display: grid;
+		width: 200%;
 		// grid-auto-columns: 1fr;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
 		column-gap: 220px;
-		row-gap: 100px;
+		// row-gap: 100px;
 	}
 
 	.grid-item-title {
@@ -339,6 +338,7 @@ button {
 	}
 
 	.course-wrapper {
+		
 		display: flex;
 		flex-wrap: nowrap;
 		overflow-x: scroll;
@@ -356,6 +356,10 @@ button {
 		&-inner {
 			margin-bottom: 0px;
 		}
+	}
+
+	.animation-wrap {
+		display: flex;
 	}
 }
 

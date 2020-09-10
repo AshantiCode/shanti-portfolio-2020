@@ -10,13 +10,12 @@
 				href="./favicon.png">
 	<link rel="stylesheet"
 				href="./styles/main.css">
+	<!-- Lottie player-->
+	<!-- <link rel="stylesheet" 
+				href="https://cdnjs.com/libraries/bodymovin"> -->
+	<!-- Locomotive Scroll -->
 	<link rel="stylesheet"
-				href="https://cdnjs.com/libraries/bodymovin">
-				
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
-
-
-
+				href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css" >
 </head>
 
 <body>
@@ -26,295 +25,337 @@
 	<header>
 		<nav class="nav-bar">
 			<ul class="nav">
-				<li><a href="#home"></a>Home</li>
-				<li><a href="#resume"></a>Resume</li>
-				<li><a href="#about"></a>About</li>
-				<li><a href="#contact"></a>Contact</li>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#resume">Resume</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
-	<div class="smoothScrolling">
-	<main class='content-wrapper' data-scroll-container>
+	<div class="smoothScrolling" data-scroll-container>
+		<main class='content-wrapper'>
+				
 
-		<section class="">
-			<div class="section home">
-				<div class="home-content">
-					<div class="home-info">
-						<div class="heading-wrapper">
-							<!--<div id="hello"></div> -->
-							<h1 class="home-heading">I turn your design <br>into a beautiful website.</h1>
+			<section class="">
+				<div class="section home">
+					<div class="home-content">
+						<div class="home-info">
+							<div class="heading-wrapper">
+								<!--<div id="hello"></div> -->
+								<h1 class="home-heading">I turn your design <br>into a beautiful website.</h1>
+							</div>
+							<!--<h2 class="home-subheading">a Front-end Developer and Digital Tools Enthusiast in Berlin.</h2> -->
+							<p class="home-info">I specialize in creating responsive websites with That Little Extra. <br> Nobody
+								likes boring websites.</p>
+
 						</div>
-						<!--<h2 class="home-subheading">a Front-end Developer and Digital Tools Enthusiast in Berlin.</h2> -->
-						<p class="home-info">I specialize in creating responsive websites with That Little Extra. <br> Nobody likes boring websites.</p>
+						<div class="img-wrapper">
+							<img src="./img/shanti-square.png"
+									 alt="Shanti Haring"
+									 class="img-responsive home-image center-block">
+						</div>
+					</div>
+				</div>
+
+
+			</section>
+			<lottie-player src="./js/downward-circle.json" id="arrow-scroll" autoplay loop ></lottie-player>
+
+			<!-- Work Section ======================================= -->
+			<section class="section work"
+							 id="work">
+				<div class="work-content">
+					<h2 class="heading"><span class="hidden">Selected </span>Work</h2>
+					<div class="work-group">
+						<div class="work-item">
+							<img src="https://place-hold.it/300x500/C1666B&text=Project&fontsize=20"
+									 alt="">
+						</div>
+						<div class="work-item">
+							<img src="https://place-hold.it/300x500/C1666B&text=Project&fontsize=20"
+									 alt="">
+						</div>
+						<div class="work-item">
+							<img src="https://place-hold.it/300x500/C1666B&text=Project&fontsize=20"
+									 alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<!-- Resume Section ======================================= -->
+			<section class="section resume"
+							 id="resume"
+							 data-scroll
+							 data-scroll-target>
+				<div class="resume-content">
+					<h2 class="heading">Resume</h2>
+					<div class="pin-wrapper">
+					<div class="resume-grid">
+						<div>
+							<h3 class="grid-item-title">Work Experience</h3>
+							<div class="work">
+								<div class="offsite-link-wrapper">
+									<h4 class="item-title">bleech GmbH WordPress Agency</h4>
+									<a href="https://bleech.de"
+										 rel="noopener nofollow"
+										 target="_blank">
+										<img src="./img/offsite-link-icon.svg"
+												 alt="Offsite Icon"
+												 class="offsite-icon">
+									</a>
+								</div>
+								<p class="small list-items job-title">Frontend Developer</p>
+								<p class="extra-small list-items">December 2019 &ndash; Current </p>
+							</div>
+							<div class="work">
+								<div class="offsite-link-wrapper">
+									<h4 class="item-title">ISM Glas- und Fassadenbau GmbH</h4>
+									<a href="https://ismberlin.de"
+										 rel="noopener nofollow"
+										 target="_blank">
+										<img src="./img/offsite-link-icon.svg"
+												 alt="Offsite Icon"
+												 class="offsite-icon">
+									</a>
+								</div>
+								<p class="small list-items job-title">Web Developer | Website Relaunch</p>
+								<p class="extra-small list-items">August 2019 &ndash; January 2020</p>
+							</div>
+						</div>
+
+						<div>
+							<h3 class="grid-item-title">Education</h3>
+							<div class="education">
+								<div class="offsite-link-wrapper">
+									<h4 class="item-title">Beuth University, Berlin</h4>
+									<a href="https://studiengang.beuth-hochschule.de/bmi/"
+										 rel="noopener nofollow"
+										 target="_blank">
+										<img src="./img/offsite-link-icon.svg"
+												 alt="Offsite Icon"
+												 class="offsite-icon">
+									</a>
+								</div>
+								<p class="small list-items job-title">Media Computer Science </p>
+								<p class="extra-small list-items">2019 &ndash; 2020</p>
+							</div>
+							<div class="education">
+								<div class="offsite-link-wrapper">
+									<h4 class="item-title">Spiced Academy, Berlin</h4>
+									<a href="https://www.spiced-academy.com/en"
+										 rel="noopener nofollow"
+										 target="_blank">
+										<img src="./img/offsite-link-icon.svg"
+												 alt="Offsite Icon"
+												 class="offsite-icon">
+									</a>
+								</div>
+								<p class="small list-items job-title">Full Stack Web Development </p>
+								<p class="extra-small list-items">2018 &ndash; 2019</p>
+							</div>
+						</div>
+
+						<div>
+							<h3 class="grid-item-title">Skills</h3>
+							<div class="skills">
+								<div class="development">
+									<h4 class="item-title">Development</h4>
+									<ul class="small list-items">
+										<li>Front-End Development</li>
+										<li>HTML5</li>
+										<li>CSS3/SASS</li>
+										<li>JavaScript</li>
+										<li>Responsive Web Design</li>
+										<li>Website Animations & Interactions</li>
+									</ul>
+								</div>
+								<div class="tools">
+									<h4 class="item-title">Tools</h4>
+									<ul class=" small list-items">
+										<li>Photoshop</li>
+										<li>Adobe XD</li>
+										<li>Sketch</li>
+										<li>Figma</li>
+										<li>Github</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div>
+							<h3 class="grid-item-title">Online Coursess</h3>
+							<div class="course-wrapper ">
+							
+									<div class="course">
+										<h4 class="item-title">Shopify Theme Development</h4>
+									
+										<p class="extra-small course-inner">Shopify</p>
+										<p class="extra-small course-inner">date</p>
+									</div>
+
+									<div class="course">
+										<h4 class="item-title">Web Development Work Flow</h4>
+									
+										<p class="extra-small course-inner">Web Development</p>
+										<p class="extra-small course-inner">date</p>
+									</div>
+
+									<div class="course">
+										<h4 class="item-title">Web Design</h4>
+									
+										<p class="extra-small course-inner">Web Design</p>
+										<p class="extra-small course-inner">date</p>
+									</div>
+
+									<div class="course">
+										<h4 class="item-title">Web Development Work Flow</h4>
+									
+										<p class="extra-small course-inner">Web Development</p>
+										<p class="extra-small course-inner">date</p>
+									</div>
+
+								
+							</div>
+
+						</div>
+					</div> <!-- close pin-wrapper -->
+				</div> 
+					<div class="btn"><a href="#"
+							 class="download-cv">Download Resume</a></div>
+				</div>
+			</section>
+
+			<!-- About Section ========================================== -->
+			<section class="section about">
+				<div class="about-content">
+					<h2 class="heading">About Me</h2>
+
+					<h4 class="about-title">Who am I?</h4>
+					<p class="about-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro tempora eligendi eaque.
+						Ratione, neque. Magni
+						eos inventore culpa cupiditate mollitia.</p>
+
+					<h4 class="about-title">What do I do?</h4>
+					<p class="about-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro tempora eligendi eaque.
+						Ratione, neque. Magni
+						eos inventore culpa cupiditate mollitia.</p>
+
+					<h4 class="about-title">What am I passionate about?</h4>
+					<p class="about-text about-text__padding">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro
+						tempora eligendi eaque. Ratione, neque. Magni
+						eos inventore culpa cupiditate mollitia.</p>
 						
-					</div>
-					<div class="img-wrapper">
-					<img src="./img/shanti-square.png"
-								 alt="Shanti Haring"
-								 class="img-responsive home-image center-block"> 
-					</div>
+					<p class="about-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem error, rerum eos
+						facere dolore necessitatibus voluptates, ad ducimus recusandae soluta ipsam optio, illo laborum mollitia
+						aspernatur suscipit exercitationem. Libero soluta expedita consectetur ex voluptates sunt ad dignissimos ut
+						similique unde?</p>
+
+					<h4 class="about-title about-title__margin">Okay, what else?</h4>
+					<p class=" about-text love-dogs">I ❤️ dogs.</p>
+					<img src="./img/hund-md.gif"
+							 alt="Hund mit sonnenbrille"
+							 class="about-gif">
+					<p>Explore some Gifs to make you smile</p>
 				</div>
-			</div>
-			
-			
-		</section>
-		<div id="arrow-scroll"></div>
-
-		<!-- Work Section ======================================= -->
-		<section class="section work" id="work">
-			<div class="work-content">
-				<h2 class="heading"><span class="hidden">Selected </span>Work</h2>
-				<div class="work-group">
-					<div class="work-item">
-						<img src="https://place-hold.it/300x500/C1666B&text=Project&fontsize=20"
-								 alt="">
-					</div>
-					<div class="work-item">
-						<img src="https://place-hold.it/300x500/C1666B&text=Project&fontsize=20"
-								 alt="">
-					</div>
-					<div class="work-item">
-						<img src="https://place-hold.it/300x500/C1666B&text=Project&fontsize=20"
-								 alt="">
-					</div>
-				</div>
-			</div>
-		</section>
-
-
-		<!-- Resume Section ======================================= -->
-		<section class="section resume">
-			<div class="resume-content">
-				<h2 class="heading">Resume</h2>
-				<div class="resume-grid">
-					<div>
-						<h3 class="grid-item-title">Work Experience</h3>
-						<div class="work">
-							<div class="offsite-link-wrapper"><h4 class="item-title">bleech GmbH WordPress Agency</h4>
-								<a href="https://bleech.de" rel="noopener nofollow" target="_blank">
-									<img src="./img/offsite-link-icon.svg" alt="Offsite Icon" class="offsite-icon">
-								</a>
-							</div>
-							<p class="small list-items job-title">Frontend Developer</p>
-							<p class="extra-small list-items">December 2019 &ndash; Current </p>
-						</div>
-						<div class="work">
-							<div class="offsite-link-wrapper">
-								<h4 class="item-title">ISM Glas- und Fassadenbau GmbH</h4>
-								<a href="https://ismberlin.de" rel="noopener nofollow" target="_blank">
-									<img src="./img/offsite-link-icon.svg" alt="Offsite Icon" class="offsite-icon">
-								</a>
-							</div>
-							<p class="small list-items job-title">Web Developer</p>
-							<p class="extra-small list-items">August 2019 &ndash; January 2020</p>
-						</div>
-					</div>
-
-					<div>
-						<h3 class="grid-item-title">Education</h3>
-						<div class="education">
-							<div class="offsite-link-wrapper">
-								<h4 class="item-title">Beuth University, Berlin</h4>
-								<a href="https://studiengang.beuth-hochschule.de/bmi/" rel="noopener nofollow" target="_blank">
-									<img src="./img/offsite-link-icon.svg" alt="Offsite Icon" class="offsite-icon">
-								</a>
-							</div>
-							<p class="small list-items job-title">Media Computer Science </p>
-							<p class="extra-small list-items">2019 &ndash; 2020</p>
-						</div>
-						<div class="education">
-							<div class="offsite-link-wrapper">
-								<h4 class="item-title">Spiced Academy, Berlin</h4>
-								<a href="https://www.spiced-academy.com/en" rel="noopener nofollow" target="_blank">
-									<img src="./img/offsite-link-icon.svg" alt="Offsite Icon" class="offsite-icon">
-								</a>
-							</div>
-							<p class="small list-items job-title">Full Stack Web Development </p>
-							<p class="extra-small list-items">2018 &ndash; 2019</p>
-						</div>
-					</div>
-
-					<div>
-						<h3 class="grid-item-title">Skills</h3>
-						<div class="skills">
-							<div class="development">
-								<h4 class="item-title">Development</h4>
-								<ul class="small list-items">
-									<li>Javascript</li>
-									<li>Javascript</li>
-									<li>Javascript</li>
-									<li>Javascript</li>
-									<li>Javascript</li>
-									<li>Javascript</li>
-								</ul>
-							</div>
-							<div class="tools">
-								<h4 class="item-title">Tools</h4>
-								<ul class=" small list-items">
-									<li>Adobe Photoshop</li>
-									<li>Adobe Photoshop</li>
-									<li>Adobe Photoshop</li>
-									<li>Adobe Photoshop</li>
-									<li>Adobe Photoshop</li>
-									<li>Adobe Photoshop</li>
-									<li>Adobe Photoshop</li>
-									<li>Adobe Photoshop</li>
-									<li>Adobe Photoshop</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-
-					<div>
-						<h3 class="grid-item-title">Online Courses</h3>
-						<div class="course-wrapper">
-							<div class="course">
-								<h4 class="item-title">Shopify Theme Development</h4>
-								<img src="./img/shopify-theme-development-320.jpg" width="200px" alt="">
-								<p class="extra-small course-inner">Shopify</p>
-								<p class="extra-small course-inner">date</p>
-							</div>
-							<div class="course">
-								<h4 class="item-title">Web Development Work Flow</h4>
-								<img src="./img/shopify-theme-development-320.jpg" width="200px" alt="">
-								<p class="extra-small course-inner">Web Development</p>
-								<p class="extra-small course-inner">date</p>
-							</div>
-							<div class="course">
-								<h4 class="item-title">Web Design</h4>
-								<img src="./img/shopify-theme-development-320.jpg" width="200px" alt="">
-								<p class="extra-small course-inner">Web Design</p>
-								<p class="extra-small course-inner">date</p>
-							</div>
-							<div class="course">
-								<h4 class="item-title">Web Development Work Flow</h4>
-								<img src="./img/shopify-theme-development-320.jpg" width="200px" alt="">
-								<p class="extra-small course-inner">Web Development</p>
-								<p class="extra-small course-inner">date</p>
-							</div>
-						</div>
-						
-					</div>
-				</div>
-				<div class="btn"><a href="#"
-						 class="download-cv">Download Resume</a></div>
-			</div>
-		</section>
-
-		<!-- About Section ========================================== -->
-		<section class="section about">
-			<div class="about-content">
-				<h2 class="heading">About Me</h2>
-				<h4 class="about-title">Who am I?</h4>
-				<p class="about-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro tempora eligendi eaque.
-					Ratione, neque. Magni
-					eos inventore culpa cupiditate mollitia.</p>
-
-				<h4 class="about-title">What do I do?</h4>
-				<p class="about-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro tempora eligendi eaque.
-					Ratione, neque. Magni
-					eos inventore culpa cupiditate mollitia.</p>
-
-				<h4 class="about-title">What am I passionate about?</h4>
-				<p class="about-text about-text__padding">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro
-					tempora eligendi eaque. Ratione, neque. Magni
-					eos inventore culpa cupiditate mollitia.</p>
-				<p class="about-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem error, rerum eos
-					facere dolore necessitatibus voluptates, ad ducimus recusandae soluta ipsam optio, illo laborum mollitia
-					aspernatur suscipit exercitationem. Libero soluta expedita consectetur ex voluptates sunt ad dignissimos ut
-					similique unde?</p>
-
-				<h4 class="about-title about-title__margin">Okay, what else?</h4>
-				<p class=" about-text love-dogs">I ❤️ dogs.</p>
-				<img src="./img/hund-md.gif"
-						 alt="Hund mit sonnenbrille"
-						 class="about-gif">
-				<p>Explore some Gifs to make you smile</p>
-			</div>
-			<article class="lets-talk">
-				<div class="floating-img">
-					<img src="./img/shanti-square.png"
-							 alt="Shanti Haring"
-							 class="about-img">
-				</div>
-				<div class="btn about-btn">
-					<a href="#contact"> Change GIF 🔥</a>
-				</div>
-			</article>
-		</section>
-
-
-		<!-- Contact Section  ======================================== -->
-		<section class="section contact">
-			<div class="contact-content">
-				<h3 class="heading">Contact</h3>
-				<div class="contact-info">
-					<p class="contact-text">Want to work together?</p>
-					<p class="contact-text">Just want to say hi? Drop me a line right here</p>
-				</div>
-				<div class="contact-inner">
-					<div class="contact-img-__wrapper">
+				<article class="lets-talk">
+					<div class="floating-img">
 						<img src="./img/shanti-square.png"
 								 alt="Shanti Haring"
-								 class="contact-img">
+								 class="about-img">
 					</div>
-					<div class="form-wrapper">
-						<form action="submit"
-									class="form">
-							<label for="name">Name</label>
-							<input type="text"
-										 aria-label="Your Name"
-										 name="name"
-										 tabindex="1"
-										 id="name"
-										 placeholder="Your Name"
-										 required>
-							<label for="email">Email</label>
-							<input type="text"
-										 aria-label="Your Email"
-										 name="email"
-										 max-length="40"
-										 tabindex="2"
-										 id="email"
-										 placeholder="Your Email"
-										 required>
-							<label for="msg">Message</label>
-							<textarea name="msg"
-												aria-label="Your Message"
-												id="msg"
-												cols="30"
-												maxlength="200"
-												rows="10"
-												tabindex="3"
-												placeholder="Your Message"
-												required></textarea>
-							<button class="btn contact-btn"
-											type="submit">Send Email</button>
-						</form>
+					<div class="btn about-btn">
+						<a href="#contact"> Change GIF 🔥</a>
+					</div>
+				</article>
+			</section>
+
+
+			<!-- Contact Section  ======================================== -->
+			<section class="section contact">
+				<div class="contact-content">
+					<h3 class="heading">Contact</h3>
+					<div class="contact-info">
+
+						<p class="contact-text">Want to work together?</p>
+						<p class="contact-text">Just want to say hi? Drop me a line right here</p>
+				
+					</div>
+					<div class="contact-inner">
+
+						<div class="contact-img-__wrapper">
+							<img src="./img/shanti-square.png"
+									 alt="Shanti Haring"
+									 class="contact-img">
+						</div>
+
+						<div class="form-wrapper">
+							<form action="submit"
+										class="form">
+								<label for="name">Name</label>
+								<input type="text"
+											 aria-label="Your Name"
+											 name="name"
+											 tabindex="1"
+											 id="name"
+											 placeholder="Your Name"
+											 required>
+								<label for="email">Email</label>
+								<input type="text"
+											 aria-label="Your Email"
+											 name="email"
+											 max-length="40"
+											 tabindex="2"
+											 id="email"
+											 placeholder="Your Email"
+											 required>
+								<label for="msg">Message</label>
+								<textarea name="msg"
+													aria-label="Your Message"
+													id="msg"
+													cols="30"
+													maxlength="200"
+													rows="10"
+													tabindex="3"
+													placeholder="Your Message"
+													required></textarea>
+								<button class="btn contact-btn"
+												type="submit">Send Email</button>
+							</form>
+						</div>
+
 					</div>
 				</div>
-			</div>
-		</section>
-	
-		<!-- Footer Section ============================================== -->
-		<footer>
-			<div id="flower" style="height: 200px;"></div>
-					 
-			<hr>
-			<div class="social-wrapper">
-				<div id="linkedin" style="width:50px; height:50px;"></div>
-				<div id="github" style="width:50px; height:50px;"></div>
-				<div id="mail" style="width:50px; height:50px;"></div>
-			</div>
-			<p class="footer-info">Designed by <a href="http://marco.fyi">Marco Cornacchia</a> built by me :)</p>
-		</footer>
-	</div> <!--End Smooth Scrolling-->
+			</section>
+
+			<!-- Footer Section ============================================== -->
+			<footer>
+				<lottie-player id="flower" src="./js/flower.json" style="height: 200px;" loop autoplay></lottie-player>
+				<hr>
+				<div class="social-wrapper">
+
+					<lottie-player id="linkedin" src="./js/linkedin.json" style="width:50px; height:50px;"></lottie-player>
+					<lottie-player id="github" src="./js/github.json" style="width:50px; height:50px;" autoplay loop></lottie-player>
+					<lottie-player id="mail" src="./js/email.json" style="width:50px; height:50px;"></lottie-player>
+							 
+				</div>
+				<p class="footer-info">Designed by <a href="http://marco.fyi">Marco Cornacchia</a> built by me :)</p>
+			</footer>
+	</div>
+	<!--End Smooth Scrolling-->
 	</main>
-	<script src="js/lottie.js" type="text/javascript"></script>
+	<!-- Seconde player-->
+	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  
+ <!-- vorherige Version, hat plötzlich nicht mehr funktioniert 10.Sept. :(
+	<script src="js/lottie.js" type="text/javascript"></script>-->
+					
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
-	<script src="./js/script.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js" ></script>
+	<script src="./js/script.js"
+	type="text/javascript"></script>
 	
 </body>
 
