@@ -1,4 +1,5 @@
 // Smooth Scrolling
+// not working when i register plugin
 // gsap.registerPlugin(ScrollTrigger);
 
 // Smooth Scrolling not working with Scroll Trigger
