@@ -270,11 +270,12 @@ button {
 .resume-grid {
   display: -ms-grid;
   display: grid;
-  width: 200%;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   -webkit-column-gap: 220px;
           column-gap: 220px;
+  row-gap: 100px;
 }
 
 .resume .grid-item-title {
@@ -319,16 +320,8 @@ button {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-}
-
-.resume .course-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  overflow-x: scroll;
-  -webkit-overflow-scrolling: touch;
+  -webkit-column-gap: 70px;
+          column-gap: 70px;
 }
 
 .resume .course {
@@ -344,12 +337,6 @@ button {
 
 .resume .course-inner {
   margin-bottom: 0px;
-}
-
-.resume .animation-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .about {

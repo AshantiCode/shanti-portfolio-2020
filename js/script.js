@@ -3,33 +3,32 @@
 // gsap.registerPlugin(ScrollTrigger);
 
 // Smooth Scrolling not working with Scroll Trigger
-(function () {
-	const scroll = new LocomotiveScroll({
-		el: document.querySelector('.smooth-scroll'),
-		smooth: true
-	});
-})();
 
+// const scroll = new LocomotiveScroll({
+// 	el: document.querySelector('.smooth-scroll'),
+// 	smooth: true
+// });
 
+// *********************     ScrollTriger code fuer Locomotive   ******************
+// 
+// 	scroll.on("scroll", ScrollTrigger.update);
+// 	// Tell Scrollrigger to use this proxy
+// 	ScrollTrigger.scrollerProxy(".smooth-scroll", {
+// 		scrollTop(value) {
+// 			return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
+// 		},
+// 		getBoundingClientRect() {
+// 			return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
+// 		},
+// 		pinType: document.querySelector(".smooth-scroll").style.transform ? "transform" : "fixed"
+// 	});
 
-scroll.on("scroll", ScrollTrigger.update);
-// Tell Scrollrigger to use this proxy
-ScrollTrigger.scrollerProxy(".smooth-scroll", {
-	scrollTop(value) {
-		return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
-	},
-	getBoundingClientRect() {
-		return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
-	},
-	pinType: document.querySelector(".smooth-scroll").style.transform ? "transform" : "fixed"
-});
+// 	// each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
+// 	ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
-// each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
-ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
-
-// after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
-ScrollTrigger.refresh();
-
+// 	// after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
+// 	ScrollTrigger.refresh();
+// *********************     ScrollTriger code fuer Locomotive   ******************
 // // Lottie Animations
 
 const linkedin = document.getElementById("linkedin");
@@ -41,69 +40,69 @@ const scroll = document.getElementById("arrow-scroll");
 const loader = document.getElementById("loader");
 
 
-let animation1 = bodymovin.loadAnimation({
-	container: linkedin,
-	renderer: "svg",
-	path: "js/linkedin.json",
-	autoplay: false,
-	loop: true,
-	speed: 0.5,
-});
+// let animation1 = bodymovin.loadAnimation({
+// 	container: linkedin,
+// 	renderer: "svg",
+// 	path: "js/linkedin.json",
+// 	autoplay: false,
+// 	loop: true,
+// 	speed: 0.5,
+// });
 
 
-let animation2 = bodymovin.loadAnimation({
-	container: github,
-	renderer: "svg",
-	path: "js/github-transp.json",
-	autoplay: false,
-	loop: true,
-	// speed: 0.5,
-});
+// let animation2 = bodymovin.loadAnimation({
+// 	container: github,
+// 	renderer: "svg",
+// 	path: "js/github-transp.json",
+// 	autoplay: false,
+// 	loop: true,
+// 	// speed: 0.5,
+// });
 
-let animation3 = bodymovin.loadAnimation({
-	container: mail,
-	renderer: "svg",
-	path: "js/email.json",
-	autoplay: false,
-	loop: true,
-	speed: 0.5,
-});
+// let animation3 = bodymovin.loadAnimation({
+// 	container: mail,
+// 	renderer: "svg",
+// 	path: "js/email.json",
+// 	autoplay: false,
+// 	loop: true,
+// 	speed: 0.5,
+// });
 
-let animation4 = bodymovin.loadAnimation({
-	container: flower,
-	renderer: "svg",
-	path: "js/flower.json",
-	autoplay: true,
-	loop: true,
-	speed: 0.5,
-});
+// let animation4 = bodymovin.loadAnimation({
+// 	container: flower,
+// 	renderer: "svg",
+// 	path: "js/flower.json",
+// 	autoplay: true,
+// 	loop: true,
+// 	speed: 0.5,
+// });
 
-let animation5 = bodymovin.loadAnimation({
-	container: hello,
-	renderer: "svg",
-	path: "js/hello.json",
-	autoplay: true,
-	loop: false,
+// let animation5 = bodymovin.loadAnimation({
+// 	container: hello,
+// 	renderer: "svg",
+// 	path: "js/hello.json",
+// 	autoplay: true,
+// 	loop: false,
 
-});
-animation5.setSpeed(0.5)
+// });
+// animation5.setSpeed(0.5)
 
-let animation6 = bodymovin.loadAnimation({
-	container: scroll,
-	renderer: "svg",
-	path: "js/downward-circle.json",
-	autoplay: true,
-	loop: true,
-});
+// let animation6 = bodymovin.loadAnimation({
+// 	container: scroll,
+// 	renderer: "svg",
+// 	path: "js/downward-circle.json",
+// 	autoplay: true,
+// 	loop: true,
+// });
 
-let animation7 = bodymovin.loadAnimation({
-	container: loader,
-	renderer: "svg",
-	path: "js/hello.json",
-	autoplay: true,
-	loop: false,
-});
-animation7.setSpeed(0.5)
+// let animation7 = bodymovin.loadAnimation({
+// 	container: loader,
+// 	renderer: "svg",
+// 	path: "js/hello.json",
+// 	autoplay: true,
+// 	loop: false,
+// });
+// animation7.setSpeed(0.5)
 
 
 
@@ -150,18 +149,27 @@ mail.addEventListener("mouseleave", function () {
 // })
 // =====   hello pre srceen  =====================
 
+//pin resume
+const resumeTl = gsap.timeline()
 
-var animWrap = document.querySelector('.animation-wrap')
+// resumeTl
+// gsap.to("#resumeHeading", {
+// 	duration: 1,
+// 	scrollTrigger: {
+// 		trigger: ".resume-content",
+// 		start: "top 20%",
+// 		pin: true,
+// 		scrub: true,
+// 		// markers: true,
+// 		onToggle: () => console.log("Toggle")
+// 	}
+// })
 
-var horizontalTween = gsap.to(animWrap, {
-	x: 400
-})
 
-ScrollTrigger.create({
-	id: "horizontalScrolling",
-	trigger: ".pin-wrap",
-	scrub: true,
-	animation: horizontalTween
-})
+
+
+
+
+
 
 
