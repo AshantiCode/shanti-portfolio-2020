@@ -267,15 +267,25 @@ button {
   height: auto;
 }
 
-.resume-grid {
+.resume .slides {
+  position: relative;
+  height: 100vh;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.resume .slide {
   display: -ms-grid;
   display: grid;
-  grid-auto-columns: 1fr;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   -webkit-column-gap: 220px;
           column-gap: 220px;
-  row-gap: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .resume .grid-item-title {
