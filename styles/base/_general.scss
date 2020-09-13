@@ -289,7 +289,8 @@ button {
 
 	.slides {
 		position: relative;
-		height: 100vh;
+		height: 55vh;
+		overflow: hidden;
 		visibility: hidden;
 		opacity: 0;
 	}

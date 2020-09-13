@@ -51,59 +51,6 @@ function init() {
 	// });
 
 
-	// let animation2 = bodymovin.loadAnimation({
-	// 	container: github,
-	// 	renderer: "svg",
-	// 	path: "js/github-transp.json",
-	// 	autoplay: false,
-	// 	loop: true,
-	// 	// speed: 0.5,
-	// });
-
-	// let animation3 = bodymovin.loadAnimation({
-	// 	container: mail,
-	// 	renderer: "svg",
-	// 	path: "js/email.json",
-	// 	autoplay: false,
-	// 	loop: true,
-	// 	speed: 0.5,
-	// });
-
-	// let animation4 = bodymovin.loadAnimation({
-	// 	container: flower,
-	// 	renderer: "svg",
-	// 	path: "js/flower.json",
-	// 	autoplay: true,
-	// 	loop: true,
-	// 	speed: 0.5,
-	// });
-
-	// let animation5 = bodymovin.loadAnimation({
-	// 	container: hello,
-	// 	renderer: "svg",
-	// 	path: "js/hello.json",
-	// 	autoplay: true,
-	// 	loop: false,
-
-	// });
-	// animation5.setSpeed(0.5)
-
-	// let animation6 = bodymovin.loadAnimation({
-	// 	container: scroll,
-	// 	renderer: "svg",
-	// 	path: "js/downward-circle.json",
-	// 	autoplay: true,
-	// 	loop: true,
-	// });
-
-	// let animation7 = bodymovin.loadAnimation({
-	// 	container: loader,
-	// 	renderer: "svg",
-	// 	path: "js/hello.json",
-	// 	autoplay: true,
-	// 	loop: false,
-	// });
-	// animation7.setSpeed(0.5)
 
 
 
