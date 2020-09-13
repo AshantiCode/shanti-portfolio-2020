@@ -287,14 +287,25 @@ button {
 .resume {
 	height: auto;
 
-	&-grid {
+	.slides {
+		position: relative;
+		height: 100vh;
+		visibility: hidden;
+		opacity: 0;
+	}
+
+	.slide {
 		display: grid;
-		// width: 200%;
-		grid-auto-columns: 1fr;
 		grid-template-columns: 1fr 1fr;
 		column-gap: 220px;
-		row-gap: 100px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
 	}
+
+	
 
 	.grid-item-title {
 		font-size: 48px;
@@ -338,13 +349,6 @@ button {
 		column-gap: 70px;
 	}
 
-	// .course-wrapper {
-		
-	// 	display: flex;
-	// 	flex-wrap: nowrap;
-	// 	overflow-x: scroll;
-	// 	-webkit-overflow-scrolling: touch;
-	// }
 
 	.course {
 		margin-bottom: 40px;
