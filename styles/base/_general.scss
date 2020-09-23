@@ -1,17 +1,16 @@
 /* General stylings for overall layout like html-tags, header, footer, container */
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
-
 
 //  h2 {
 // 	font-size: 2.5rem;  //40px
 // 	font-weight: bold;
 // 	padding-bottom: $space;
-		
+
 // 	@media (min-width: $xs) {
 // 		font-size: 3.125rem;  //50px
 // 	}
@@ -24,7 +23,7 @@
 // 	font-size: 3.75rem;  //60px
 // 	font-weight: bold;
 // 	// padding-bottom: $space;
-		
+
 // 	@media (min-width: $xs) {
 // 		font-size: 4.375rem;  //70px
 // 	}
@@ -54,7 +53,7 @@
 // }
 
 // p {
-// 	font-size: 18px;  
+// 	font-size: 18px;
 // 	line-height: 1.5;
 // 	margin-bottom: 32px;
 
@@ -62,432 +61,419 @@
 // 		font-size: 28px
 // 	}
 // }
-
+.purple {
+  border: 2px solid purple;
+}
+.green {
+  border: 2px solid green;
+}
 
 .section {
-	height: 100vh;
-	// padding: 80px 0 ;
-	margin-bottom: 220px;
+  height: 100vh;
+  // padding: 80px 0 ;
+  margin-bottom: 220px;
+  perspective: 1000px;
 
-	.heading {
-		padding-bottom: 80px;
-		font-size: 72px;
-	}
+  .heading {
+    padding-bottom: 80px;
+    font-size: 72px;
+  }
 }
 
 a {
-	text-decoration: none;
-	color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
-input, textarea {
-	display: block;
+input,
+textarea {
+  display: block;
 }
 
 button {
-	padding: 0;
+  padding: 0;
   border: none;
   outline: none;
   font: inherit;
   color: inherit;
-  background: none
+  background: none;
 }
 
 .btn {
-	border: 3px solid $black;
-	width: 300px;
-	padding: 12px;
-	font-size: 32px;
-	text-align: center;
-	margin-top: 40px;
-	border-radius: 10px;
-	cursor: pointer;
+  border: 3px solid $black;
+  width: 300px;
+  padding: 12px;
+  font-size: 32px;
+  text-align: center;
+  margin-top: 40px;
+  border-radius: 10px;
+  cursor: pointer;
 
-	&:hover {
-		background: linear-gradient(#445555 to #212121)
-	}
+  &:hover {
+    background: linear-gradient(#445555 to #212121);
+  }
 }
 
 .small {
-	font-size: 20px;
-	
+  font-size: 20px;
 }
 
 .extra-small {
-	font-size: 15px;
-	font-weight: 300;
+  font-size: 15px;
+  font-weight: 300;
 }
 
 .content-wrapper {
-	width: 100%;
-	max-width: 1140px;
-	margin: 0 auto;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 .center-block {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .img-responsive {
-	max-width: 100%;
-	display: block;
-	height: auto;
-
+  max-width: 100%;
+  display: block;
+  height: auto;
 }
 
 //  ==========  Loader   ======================
 
 .loader {
-	position: fixed;
-	z-index: 99;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: #eb9595;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #eb9595;
 }
 //  ==========  Navigation Desktop  ======================
 .nav {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background: #d38b8b;
-	height: 50px;
-	position: fixed;
-	width: 100%;
-	z-index: 50;
-	padding: 0px 30px;
-	
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #d38b8b;
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  z-index: 50;
+  padding: 0px 30px;
 }
-
-
 
 //  ==========  Home  ======================
 
 .home {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 90vh;
-	margin-bottom: 0;
-	
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  margin-bottom: 0;
 
-	#hello {
-		width: 300px;
-		height: 200px;
-		transform: translateX(-40px);
-	}
+  #hello {
+    width: 300px;
+    height: 200px;
+    transform: translateX(-40px);
+  }
 
-	&-heading {
-		font-size: 2.5rem;  //40px
-		font-weight: bold;
-		padding-bottom: $space;
-	
-		@media (min-width: $lg) {
-			align-self: flex-end;
-			// transform: translate(-50px, -14px);
-		}
-			
-		@media (min-width: $xs) {
-			font-size: 3.125rem;  //50px
-		}
-		@media (min-width: $sm) {
-			padding-bottom: $space-sm;
-		}
-		@media (min-width: $md) {
-			font-size: 80px;  //50px
-			line-height: normal;
-			
-		}
-		
-	}
- // if i have the hello logo there
-	.heading-wrapper {
-		@media (min-width: $lg) {
-			display: flex;
-			flex-direction: row;
-		}
-	}
-	
-	&-subheading {
-		font-size: 8vw ;
-		margin-bottom: 30px;
-		
-		@media (min-width: $xs) {
-			font-size: 26px; 
-		}
-	}
+  &-heading {
+    font-size: 2.5rem; //40px
+    font-weight: bold;
+    padding-bottom: $space;
 
-	&-content {
-		@media (min-width: $md) {
-			display: flex;
-			justify-content: space-around;
-		}
-	}
+    @media (min-width: $lg) {
+      align-self: flex-end;
+      // transform: translate(-50px, -14px);
+    }
 
-	&-info {
-		// border: 2px solid green;
-		font-size: 18px;  
-		line-height: 1.5;
-		margin-bottom: 32px;
-	
-		@media (min-width: $xs) {
-			font-size: 28px;
-		}
+    @media (min-width: $xs) {
+      font-size: 3.125rem; //50px
+    }
+    @media (min-width: $sm) {
+      padding-bottom: $space-sm;
+    }
+    @media (min-width: $md) {
+      font-size: 80px; //50px
+      line-height: normal;
+    }
+  }
+  // if i have the hello logo there
+  .heading-wrapper {
+    @media (min-width: $lg) {
+      display: flex;
+      flex-direction: row;
+    }
+  }
 
-		@media (min-width: $md) {
-			width: 80%;
-			margin-right: 25px;
-		}
-	}
+  &-subheading {
+    font-size: 8vw;
+    margin-bottom: 30px;
 
-	&-image {
-	
-		border-radius: 50%;
-		width: 70%;
+    @media (min-width: $xs) {
+      font-size: 26px;
+    }
+  }
 
-		@media (min-width: $xs) {
-			width: 340px;
-		}
-	}
+  &-content {
+    @media (min-width: $md) {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
 
-	.img-wrapper {
-		display: flex;	
-		flex-direction: column;
-		align-self: center;
-	}
+  &-info {
+    // border: 2px solid green;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 32px;
+
+    @media (min-width: $xs) {
+      font-size: 28px;
+    }
+
+    @media (min-width: $md) {
+      width: 80%;
+      margin-right: 25px;
+    }
+  }
+
+  &-image {
+    border-radius: 50%;
+    width: 70%;
+
+    @media (min-width: $xs) {
+      width: 340px;
+    }
+  }
+
+  .img-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
 }
 #arrow-scroll {
-	width: 100px;
-	height: 100px;
-	transform: rotate(180deg);
-	margin: 0 auto 220px;
+  width: 100px;
+  height: 100px;
+  transform: rotate(180deg);
+  margin: 0 auto 220px;
 
-	&:hover {
-		cursor: pointer;
-	}
+  &:hover {
+    cursor: pointer;
+  }
 }
-
 
 //  ==========  Work  ======================
 .work {
-	&-group {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		
-	}
+  &-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
-
 
 //  ==========  Resume  ======================
 
 .resume {
-	height: auto;
+  height: auto;
 
-	.slides {
-		position: relative;
-		height: 55vh;
-		overflow: hidden;
-		visibility: hidden;
-		opacity: 0;
-	}
+  .slides {
+    position: relative;
+    height: 55vh;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+  }
 
-	.slide {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		column-gap: 220px;
-		position: absolute;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		right: 0;
-	}
+  .slide {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 220px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
 
-	
+  .grid-item-title {
+    font-size: 48px;
+    margin-bottom: 30px;
+  }
 
-	.grid-item-title {
-		font-size: 48px;
-		margin-bottom: 30px;
-	}
+  .work,
+  .education {
+    margin-bottom: 40px;
+  }
 
-	.work,
-	.education {
-		margin-bottom: 40px;
-	}
+  .offsite {
+    &-link-wrapper {
+      display: flex;
+    }
 
-	.offsite {
-		&-link-wrapper {
-		display: flex;
-		}
+    &-icon {
+      padding: 3px 0px 0px 9px;
+      cursor: pointer;
+    }
+  }
+  .item-title {
+    font-size: 24px;
+    line-height: 1.3;
+    margin-bottom: 0px;
+    font-weight: bold;
+  }
 
-		&-icon {
-			padding: 3px 0px 0px 9px;	
-			cursor: pointer;
-		}
-	}
-	.item-title {
-		font-size: 24px;
-		line-height: 1.3;
-		margin-bottom: 0px;
-		font-weight: bold;
-	}
+  .job-title {
+    padding: 5px 0px;
+  }
 
-	.job-title {
-		padding: 5px 0px;;
-	}
+  .list-items {
+    line-height: 1.5;
+    font-weight: 300;
+  }
 
-	.list-items {
-		line-height: 1.5;
-		font-weight: 300;
-	}
-	
-	.skills {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		column-gap: 70px;
-	}
+  .skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 70px;
+  }
 
+  .course {
+    margin-bottom: 40px;
+    flex: 0 0 auto;
 
-	.course {
-		margin-bottom: 40px;
-		flex: 0 0 auto;
+    img {
+      width: 100%;
+    }
 
-		img {
-			width: 100%;
-		}
-
-		&-inner {
-			margin-bottom: 0px;
-		}
-	}
-	
+    &-inner {
+      margin-bottom: 0px;
+    }
+  }
 }
-
 
 //  ==========  About  ======================
 .about {
-	display: flex;
-	align-items: flex-end;
-	height: auto;	
-	
-	&-content {
-		width: 760px;
-		overflow: hidden;
-		padding-right: 20px;
-	}
-	&-title {
-		font-size: 32px;
-		margin-bottom: 20px;
+  display: flex;
+  align-items: flex-end;
+  height: auto;
 
-		&__margin {
-			margin-bottom: 0px;
-		}
-	}
+  &-content {
+    width: 760px;
+    overflow: hidden;
+    padding-right: 20px;
+  }
+  &-title {
+    font-size: 32px;
+    margin-bottom: 20px;
 
-	&-text {
-		padding-bottom: 55px;
-		font-size: 22px;
-		line-height: 1.5;
+    &__margin {
+      margin-bottom: 0px;
+    }
+  }
 
-		&__padding {
-			padding-bottom: 30px;
-		}
-	}
+  &-text {
+    padding-bottom: 55px;
+    font-size: 22px;
+    line-height: 1.5;
 
-	&-img {
-		max-width: 200px;
-	}
+    &__padding {
+      padding-bottom: 30px;
+    }
+  }
 
-	.lets-talk {
-		display: flex;
-		flex-direction: column;
-		flex: 1 0 auto;
-			
-	}
+  &-img {
+    max-width: 200px;
+  }
 
-	.floating-img {
-		// position: relative;
-		display: flex;
-		justify-content: center;
-		// flex: 1;
-	}
+  .lets-talk {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+  }
 
-	&-gif {
-		width: 60px;
-		transform: translate(5px, 15px);
-		
-	}
+  .floating-img {
+    // position: relative;
+    display: flex;
+    justify-content: center;
+    // flex: 1;
+  }
 
-	&-btn {
-		font-size: 44px;
-		font-weight: bold;
-		margin-top: 60px;
-		width: 370px;
-	}
+  &-gif {
+    width: 60px;
+    transform: translate(5px, 15px);
+  }
 
-	.love-dogs {
-		display: inline;
-		
-	}
+  &-btn {
+    font-size: 44px;
+    font-weight: bold;
+    margin-top: 60px;
+    width: 370px;
+  }
+
+  .love-dogs {
+    display: inline;
+  }
 }
 
 // ===  Contact =============================
 
 .contact {
-	height: auto;
-	margin-bottom: 0px;
-	&-info	 {
-		margin-bottom: 100px;
-	}
-	&-text {
-		font-size: 32px;
-		line-height: 1.5;
-	}
+  height: auto;
+  margin-bottom: 0px;
+  &-info {
+    margin-bottom: 100px;
+  }
+  &-text {
+    font-size: 32px;
+    line-height: 1.5;
+  }
 
-	&-inner {
-		display: grid;
-		grid-template-columns: 1fr 2fr;
-		column-gap: 150px;
-	}
+  &-inner {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 150px;
+  }
 
-	&-img {
-		width: 300px;
-	}
+  &-img {
+    width: 300px;
+  }
 
-	&-btn {
-		width: 100%;
-	}
+  &-btn {
+    width: 100%;
+  }
 
-	input, textarea {
-		padding: 20px;
-		width: 100%;
-		margin-bottom: 20px;
-		border: none;
-		background: #F5F6F8;
-		border-radius: 5px;
-		
-	}
+  input,
+  textarea {
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    background: #f5f6f8;
+    border-radius: 5px;
+  }
 
-	label {
-		display: none;
-	}
+  label {
+    display: none;
+  }
 }
 
 // Footer Section  ===============================
 
 #flower {
-	transform: translateY(12px);
+  transform: translateY(12px);
 }
 
 .social-wrapper {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .footer-info {
-	text-align: center;
-	padding: 15px 0px 25px;
+  text-align: center;
+  padding: 15px 0px 25px;
 }

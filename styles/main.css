@@ -11,9 +11,19 @@
   overflow-x: hidden;
 }
 
+.purple {
+  border: 2px solid purple;
+}
+
+.green {
+  border: 2px solid green;
+}
+
 .section {
   height: 100vh;
   margin-bottom: 220px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
 }
 
 .section .heading {
@@ -26,7 +36,8 @@ a {
   color: inherit;
 }
 
-input, textarea {
+input,
+textarea {
   display: block;
 }
 
@@ -459,12 +470,13 @@ button {
   width: 100%;
 }
 
-.contact input, .contact textarea {
+.contact input,
+.contact textarea {
   padding: 20px;
   width: 100%;
   margin-bottom: 20px;
   border: none;
-  background: #F5F6F8;
+  background: #f5f6f8;
   border-radius: 5px;
 }
 
